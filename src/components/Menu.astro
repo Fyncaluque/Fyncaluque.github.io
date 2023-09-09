@@ -1,0 +1,73 @@
+<nav class="bg-indigo-900 text-white py-5 sticky z-10">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="text-3xl font-extrabold"><code>&lt;FMY/&gt;</code></div>
+    <ul class="flex [&>li>a]:pl-8 [&>li>a]:font-semibold menu" id="menu">
+      <li><a data-menuanchor="home" href="#home" class="active">Inicio</a></li>
+      <li><a data-menuanchor="about" href="#about">Acerca de</a></li>
+      <li><a data-menuanchor="projects" href="#projects">Proyectos</a></li>
+      <li><a data-menuanchor="contact" href="#contact">Contacto</a></li>
+    </ul>
+    <button id="toggle">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+  </div>
+</nav>
+
+<script>
+  const toggle = document.querySelector("#toggle");
+  const menu = document.querySelector("#menu");
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("show");
+  });
+</script>
+
+<style>
+  #toggle {
+    display: none;
+  }
+
+  #toggle div {
+    background: #000;
+    height: 2px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.5s;
+    transform-origin: left;
+  }
+
+  #toggle:hover {
+    cursor: pointer;
+  }
+
+  #toggle:hover div:first-child {
+    transform: rotate(45deg);
+  }
+
+  #toggle:hover div:nth-child(2) {
+    opacity: 0;
+  }
+
+  #toggle:hover div:last-child {
+    transform: rotate(-45deg);
+  }
+
+  @media (max-width: 768px) {
+    .navbar-menu {
+      display: none;
+    }
+
+    #toggle {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 2rem;
+      height: 2rem;
+      border: 0;
+      padding: 0;
+      margin: 0;
+      background: transparent;
+    }
+  }
+</style>

@@ -10,6 +10,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^3.0.8"
+    "@astrojs/tailwind": "^5.0.0",
+    "astro": "^3.0.8",
+    "fullpage.js": "^4.0.20",
+    "tailwindcss": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/fullpage.js": "^2.9.3"
   }
 }

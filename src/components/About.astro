@@ -1,0 +1,133 @@
+---
+import SoftSkill from "./SoftSkill.astro";
+import Skill from "./Skill.astro";
+---
+
+<section data-anchor="about" class="section bg-amber-50">
+  <div class="container mx-auto">
+    <!-- Title -->
+    <div class="flex flex-row items-center justify-center gap-3 my-10">
+      <div class="h-0.5 w-24 bg-indigo-950"></div>
+      <h1 class="text-center m-0 text-indigo-950 font-extrabold text-3xl">
+        Acerca de
+      </h1>
+      <div class="h-0.5 w-24 bg-indigo-950"></div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-4 gap-y-5 mx-5">
+      <!-- Profile -->
+      <div class="p-6 flex items-center shadow-lg rounded-md bg-green-300">
+        <div>
+          <p class="leading-7 mb-3 letter font-semibold text-lg">
+            Desarrollador web con experiencia como freelance en desarrollo
+            aplicaciones web, diseño de interfaces de usuario e integración con
+            APIs.
+          </p>
+
+          <button
+            class="bg-gray-700 text-white hover:bg-gray-600 text-md border border-black py-1 px-5 rounded shadow-sm shadow-black transition-transform duration-300 hover:105"
+          >
+            <span class="mr-3 font-bold">Descargar CV</span>
+            <i class="fa-solid fa-download"></i>
+          </button>
+        </div>
+      </div>
+      <!--Soft Skills -->
+      <div class="p-6 shadow-lg rounded-md bg-indigo-500 text-white">
+        <h3 class="m-0 font-extrabold text-xl mb-3">Habilidades blandas</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="flex flex-col gap-4 p-1">
+            <SoftSkill title="Gestión de proyecto" color="indigo">
+              <i class="fa-solid fa-gear"></i>
+            </SoftSkill>
+            <SoftSkill title="Trabajo en equipo" color="orange">
+              <i class="fa-solid fa-handshake"></i>
+            </SoftSkill>
+            <SoftSkill title="Adaptabilidad" color="green">
+              <i class="fa-solid fa-puzzle-piece"></i>
+            </SoftSkill>
+          </div>
+          <div class="flex flex-col gap-4 p-1">
+            <SoftSkill title="Gestión del tiempo" color="purple">
+              <i class="fa-solid fa-hourglass-half"></i>
+            </SoftSkill>
+            <SoftSkill title="Autoaprendizaje" color="yellow">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </SoftSkill>
+            <SoftSkill title="Creatividad" color="red">
+              <i class="fa-solid fa-palette"></i>
+            </SoftSkill>
+          </div>
+        </div>
+      </div>
+
+      <!-- knowledge -->
+      <div class="bg-orange-200 p-5 lg:col-span-2 mb-20 rounded-md shadow-lg">
+        <h3 class="m-0 font-extrabold text-xl mb-3 text-center">
+          Habilidades técnicas
+        </h3>
+
+        <div class="text-center">
+          <Skill title="Angular">
+            <i class="fa-brands fa-angular"></i>
+          </Skill>
+          <Skill title="React">
+            <i class="fa-brands fa-react"></i>
+          </Skill>
+          <Skill title="Bootstrap">
+            <i class="fa-brands fa-bootstrap"></i>
+          </Skill>
+          <Skill title="Tailwind">
+            <img
+              src="/svg/icon-tailwind.svg"
+              alt="image tailwind"
+              class="w-4 inline-block"
+            />
+          </Skill>
+
+          <Skill title="MySQL">
+            <img
+              src="/svg/icon-mysql.svg"
+              alt="image mysql"
+              class="w-4 inline-block"
+            />
+          </Skill>
+          <Skill title="SQL Server">
+            <img
+              src="/svg/icon-sqlserver.svg"
+              alt="image sql server"
+              class="w-4 inline-block"
+            />
+          </Skill>
+          <Skill title="Git">
+            <i class="fa-brands fa-git-alt"></i>
+          </Skill>
+          <Skill title="Redux">
+            <img
+              src="/svg/icon-redux.svg"
+              alt="image redux"
+              class="w-4 inline-block"
+            />
+          </Skill>
+          <Skill title="Ngrx">
+            <img
+              src="/svg/icon-ngrx.svg"
+              alt="image Ngrx"
+              class="w-4 inline-block"
+            />
+          </Skill>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .letter::first-letter {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 1px; /* Opcional: ajusta el margen derecho según tus preferencias */
+    float: left; /* Opcional: usa float si deseas que la letra capital esté a la izquierda del texto */
+  }
+</style>
