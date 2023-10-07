@@ -2,17 +2,43 @@
 import Project from "./Project.astro";
 ---
 
-<section class="section bg-indigo-200" data-anchor="projects">
-  <div class="container mx-auto pb-10">
+<section class="section bg-indigo-100" data-anchor="projects">
+  <div class="container mx-auto py-10">
     <!-- Title section -->
-    <div class="flex flex-row items-center justify-center gap-3 my-10">
+    <div class="flex flex-row items-center justify-center gap-3 mb-10">
       <div class="h-0.5 w-24 bg-indigo-950"></div>
-      <h1 class="text-center m-0 text-indigo-950 font-extrabold text-3xl">
-        Projects
-      </h1>
+      <h2 class="text-center m-0 text-indigo-950 font-extrabold text-3xl">
+        Proyectos
+      </h2>
       <div class="h-0.5 w-24 bg-indigo-950"></div>
     </div>
     <!-- List Projects -->
-    <Project />
+    <div class="slide" data-anchor="slide1">
+      <Project />
+    </div>
+    <div class="slide" data-anchor="slide3">
+      <Project />
+    </div>
+    <div class="slide" data-anchor="slide3">
+      <Project />
+    </div>
+    <!-- <div class="my-10 text-center">
+      <a
+        data-menuanchor="slide1"
+        href="#projects"
+        class="bg-indigo-500 py-1 px-5">Proyecto 1</a
+      >
+      <a
+        data-menuanchor="slide2"
+        href="#projects/1"
+        class="bg-indigo-500 py-1 px-5">Proyecto 2</a
+      >
+      <a
+        data-menuanchor="slide3"
+        href="#projects/2"
+        class="bg-indigo-500 py-1 px-5">Proyecto 3</a
+      >
+      <button id="moveRight">Next</button>
+    </div> -->
   </div>
 </section>

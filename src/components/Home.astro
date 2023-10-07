@@ -1,26 +1,45 @@
-<section data-anchor="home" class="section animated fadeIn">
-  <div class="container mx-auto pt-24 animate__animated animate__bounce">
+<section data-anchor="home" class="section">
+  <div class="container mx-auto py-20 animate__animated animate__bounce">
     <div class="grid sm:grid-cols-1 md:grid-cols-2">
-      <div class="flex flex-col justify-center items-center md:items-start p-6">
-        <p class="text-4xl font-extrabold pb-3 italic">Hola!, soy</p>
+      <div
+        class="flex flex-col justify-center px-5 lg:ps-10 text-center md:text-left"
+      >
+        <p class="text-4xl sm:text-5xl font-extrabold pb-5 italic">
+          Hola!, soy
+        </p>
         <h1
-          class="text-5xl font-extrabold italic pb-3 name text-center md:text-left"
+          class="text-6xl md:text-5xl lg:text-6xl font-extrabold italic pb-5 name md:text-left"
         >
-          Fernando M. Yncaluque
+          Fernando Mamani
         </h1>
-        <p class="text-2xl font-bold pb-8 italic">FRONT-END DEVELOPER</p>
+        <p class="text-2xl md:text-3xl font-bold pb-8 italic">
+          FRONT-END DEVELOPER
+        </p>
 
-        <a
-          data-menuanchor="contact"
-          href="#contact"
-          class="text-center bg-orange-400 hover:bg-orange-500 text-lg border border-black p-2 w-60 rounded shadow-md shadow-black transform transition-transform duration-300 hover:scale-105"
-        >
-          <span class="mr-3 font-bold"
-            >Contactame <i class="fa-solid fa-paper-plane"></i></span
+        <div class="flex gap-3">
+          <a
+            data-menuanchor="contact"
+            href="#contact"
+            class="text-center bg-orange-400 hover:bg-orange-500 text-lg border border-neutral-500 p-2 w-full md:w-52 rounded shadow-md shadow-black transform transition-transform duration-300 hover:scale-105"
           >
-        </a>
+            <span class="font-extrabold text-black">Descargar CV</span>
+            <span class="hidden lg:inline ms-3"
+              ><i class="fa-solid fa-download"></i></span
+            >
+          </a>
+          <a
+            data-menuanchor="contact"
+            href="#contact"
+            class="text-center bg-indigo-900 hover:bg-indigo-950 text-lg border border-black p-2 w-full md:w-52 rounded shadow-md shadow-black transform transition-transform duration-300 hover:scale-105"
+          >
+            <span class="font-extrabold text-white">Contactame</span>
+            <span class="hidden lg:inline ms-3 text-white"
+              ><i class="fa-solid fa-paper-plane"></i></span
+            >
+          </a>
+        </div>
       </div>
-      <div class="p-6">
+      <div class="py-10 md:py-5">
         <video
           autoplay
           loop

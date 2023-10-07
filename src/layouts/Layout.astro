@@ -45,6 +45,7 @@ const { title } = Astro.props;
     <script
       src="https://kit.fontawesome.com/5c4a0b490c.js"
       crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Fullpage JS -->
     <script
       type="text/javascript"
@@ -53,10 +54,13 @@ const { title } = Astro.props;
     <script>
       new fullpage("#fullpage", {
         //options here
+        menu: "#my-menu",
+        anchors: ["home", "about", "projects", "contact"],
         autoScrolling: true,
         scrollHorizontally: true,
         verticalCentered: false,
         navigation: true,
+        controlArrows: true,
         credits: {
           enabled: true,
           label: "<FMY/>",
@@ -73,25 +77,6 @@ const { title } = Astro.props;
 
   body {
     font-family: "Karla", sans-serif;
-    /* background: #c5e4d2; */
-  }
-
-  /* Animación de transición de página */
-  .animated {
-    animation-duration: 0.9s;
-    animation-fill-mode: both;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  .fadeIn {
-    animation-name: fadeIn;
+    font-size: 16px;
   }
 </style>
