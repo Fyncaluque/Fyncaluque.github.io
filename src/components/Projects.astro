@@ -1,44 +1,62 @@
 ---
-import Project from "./Project.astro";
+import Pec from "./apps/Pec.astro";
+import EasyPos from "./apps/EasyPos.astro";
+import JournalApp from "./apps/JournalApp.astro";
 ---
 
-<section class="section bg-indigo-100" data-anchor="projects">
-  <div class="container mx-auto py-10">
+<section class="section py-5" data-anchor="projects">
+  <div class="container mx-auto">
     <!-- Title section -->
-    <div class="flex flex-row items-center justify-center gap-3 mb-10">
+    <div class="flex flex-row items-center justify-center gap-3 mb-5">
       <div class="h-0.5 w-24 bg-indigo-950"></div>
       <h2 class="text-center m-0 text-indigo-950 font-extrabold text-3xl">
         Proyectos
       </h2>
       <div class="h-0.5 w-24 bg-indigo-950"></div>
     </div>
+    <!-- /Title section -->
+
     <!-- List Projects -->
     <div class="slide" data-anchor="slide1">
-      <Project />
+      <Pec />
+    </div>
+    <div class="slide" data-anchor="slide2">
+      <EasyPos />
     </div>
     <div class="slide" data-anchor="slide3">
-      <Project />
+      <JournalApp />
     </div>
-    <div class="slide" data-anchor="slide3">
-      <Project />
-    </div>
-    <!-- <div class="my-10 text-center">
+    <!-- /List Projects -->
+
+    <!-- Navigation -->
+    <div class="flex gap-1 justify-center mt-3">
       <a
         data-menuanchor="slide1"
         href="#projects"
-        class="bg-indigo-500 py-1 px-5">Proyecto 1</a
+        class="bg-indigo-600 py-1 px-5 rounded-md text-white"
+      >
+        1</a
       >
       <a
         data-menuanchor="slide2"
         href="#projects/1"
-        class="bg-indigo-500 py-1 px-5">Proyecto 2</a
+        class="bg-indigo-600 py-1 px-5 rounded-md text-white"
+      >
+        2</a
       >
       <a
         data-menuanchor="slide3"
         href="#projects/2"
-        class="bg-indigo-500 py-1 px-5">Proyecto 3</a
+        class="bg-indigo-600 py-1 px-5 rounded-md text-white"
       >
-      <button id="moveRight">Next</button>
-    </div> -->
+        3</a
+      >
+      <a
+        href="https://github.com/fyncaluque"
+        target="_blank"
+        class="bg-indigo-600 py-1 px-5 rounded-md text-white">...</a
+      >
+    </div>
   </div>
+  <!-- /Navigation -->
 </section>

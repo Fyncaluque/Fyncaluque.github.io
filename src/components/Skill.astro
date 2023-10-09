@@ -1,21 +1,5 @@
----
-interface Props {
-  title: string;
-}
-
-const { title } = Astro.props;
----
-
 <div
-  class={`bg-orange-100 inline-block py-2 px-4 mx-2 mb-3 rounded-full  shadow-md shadow-gray-700    hover:scale-105 transform transition-transform duration-300`}
+  class="bg-indigo-100 rounded-lg shadow-lg shadow-indigo-200 px-5 py-2 text-lg hover:scale-105 transform transition-transform duration-300"
 >
-  <span class="font-semibold transition-transform duration-300 hover:scale-100"
-    ><slot /><span class="ml-1">{title}</span></span
-  >
+  <slot />
 </div>
-
-<style>
-  .sketch {
-    border-radius: 255px 25px 225px 25px/25px 225px 25px 255px;
-  }
-</style>

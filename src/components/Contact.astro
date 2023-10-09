@@ -2,7 +2,7 @@
 import Footer from "./Footer.astro";
 ---
 
-<section class="section relative bg-indigo-200" data-anchor="contact">
+<section class="section relative" data-anchor="contact">
   <div class="container mx-auto px-5 py-5">
     <!-- Title section -->
     <div class="flex flex-row items-center justify-center gap-3 mb-3">
@@ -13,7 +13,7 @@ import Footer from "./Footer.astro";
 
       <div class="h-0.5 w-24 bg-indigo-900"></div>
     </div>
-    <p class="text-center text-2xl mb-5 text-indigo-900 font-semibold">
+    <p class="text-center md:text-2xl mb-5 text-indigo-900 font-semibold">
       ¿Tienes alguna duda o consulta? Estare encantado de responderte.
     </p>
     <!-- Form -->
@@ -21,21 +21,19 @@ import Footer from "./Footer.astro";
     <div class="flex justify-center">
       <div class="w-full md:w-3/4 lg:w-1/2">
         <form
-          action="#"
+          action="https://formspree.io/f/maygpgqw"
           method="POST"
           class="bg-indigo-800 shadow-md rounded p-5"
         >
           <div class="mb-4">
-            <label
-              class="block text-white text-base font-bold mb-2"
-              for="nombre"
-            >
+            <label class="block text-white text-base font-bold mb-2" for="name">
               Nombre
             </label>
             <input
               class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="nombre"
+              id="name"
               type="text"
+              name="name"
               placeholder="Nombre"
               required
             />
@@ -50,7 +48,8 @@ import Footer from "./Footer.astro";
             <input
               class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="email"
-              type="text"
+              type="email"
+              name="email"
               placeholder="Correo Electrónico"
               required
             />
@@ -58,13 +57,14 @@ import Footer from "./Footer.astro";
           <div class="mb-4">
             <label
               class="block text-white text-base font-bold mb-2"
-              for="mensaje"
+              for="message"
             >
               Mensaje
             </label>
             <textarea
               class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="mensaje"
+              id="message"
+              name="message"
               placeholder="Escribe tu mensaje aquí"
               required></textarea>
           </div>
