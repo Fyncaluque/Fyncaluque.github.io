@@ -1,0 +1,1 @@
+import"https://code.jquery.com/jquery-3.6.0.min.js";import"https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js";new fullpage("#fullpage",{menu:"#my-menu",anchors:["home","about","projects","contact"],autoScrolling:!0,scrollHorizontally:!0,verticalCentered:!1,navigation:!0,controlArrows:!1,credits:{enabled:!0,label:"<FMY/>",position:"right"}});
